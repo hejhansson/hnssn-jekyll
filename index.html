@@ -1,0 +1,86 @@
+---
+layout: default
+---
+
+<div class="col col-12 intro-container px2">
+
+    <div class="container">
+      <div class="intro flex flex-center">
+        <h1 class="white vhs-fade vhs-delay-3">
+          Webbutveckling & design med<br>fokus på användare och prestanda.
+          <p><br></p>
+        </h1>
+
+        <a href="#about" class="triangle vhs-fade vhs-delay-5"></a>
+      </div>
+    </div>
+
+</div>
+
+<div class="container clearfix">
+  <div id="about" class="col col-12 mt4">
+
+    <div class="mb4 sm-col-8 px2 mx-auto">
+      <p class="mt4">
+      Jag är en frilansande designer/webbutvecklare från Falkenberg. <br>Jag har bland annat varit med och utvecklat sajter för Karlstads kommun, Region Värmland, Brämhults, Skanska Folktandvården Värmland & MSC.
+      </p>
+
+      <p>
+      Jag tar fram moderna webblösningar till små till mellanstora företag. Jag utvecklar allt från enklare hemsidor till e-handel, bokningssystem och skräddarsydda webbplattformar. Jag hjälper till hela vägen—från strategi, skiss, interaktions- och UX-design till utveckling av produkten.
+      </p>
+
+      <p>
+      Jag jobbar gärna med de senaste verktygen och väljer det och programmeringspråk efter vad jag anser vara det bästa och mest effektiva för varje enskilt projekt. Idag jobbar jag gärna med WordPress och Meteor.js.
+      </p>
+
+      <!-- <p>
+        <small>Är du intresserad av att se mitt cv kan du göra det <a class="link" href="{{site.url}}/cv/">här</a></small>
+      </p> -->
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container clearfix">
+  <div id="portfolio" class="col col-12 mt4">
+
+    <div class="portfolio mt3">
+      {% for post in site.categories.projekt %}
+        <div class="col md-col-12 lg-col-6 p2">
+          <div class="inner">
+            <a href="{{ post.url | prepend: site.baseurl }}"><img class="vhs-fade vhs-delay-3" src="{{ post.image }}" alt="" /></a>
+          </div>
+          <h2 class="roll">{{post.title}}</h2>
+          <p class="roll">{{post.roll}}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+
+<div class="container clearfix mb4 information">
+    <div class="sm-col-8 px2 relative">
+      <p class="mt4 block py4">
+
+        <span class="col col-10 mb2">
+          <span class="status">Jag är tillgänglig för projekt.</span><br>Vill du kontakta mig angående det eller liknande så rekommenderar jag att du skickar ett mail eller slår en pling.
+        </span>
+
+
+        <span class="col col-4">
+          <span class="black">E:</span> alexander@hnssn.se
+        </span>
+        <span class="col col-6">
+          <span class="black">T:</span> +46 730 66 92 60
+        </span>
+        <span class="col col-4">
+          <span class="black">GitHub:</span> <a href="http://github.com/hejhansson">hejhansson</a>
+        </span>
+        <span class="col col-6">
+          <span class="black">Twitter:</span> <a href="http://twitter.com/hejhansson">@hejhansson</a>
+        </span>
+      </p>
+    </div>
+</div>

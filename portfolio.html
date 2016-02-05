@@ -1,0 +1,27 @@
+---
+layout: page
+title: Portfolio
+permalink: /portfolio/
+weight: 7
+---
+
+<div>
+    <h1 class="page-heading portfolio__heading mb0 mt4">Portfolio —</h1>
+    <p class="mb4">Ett urval av projekt.</p>
+    <br><br><br>
+    <div class="portfolio">
+      {% for post in site.categories.projekt %}
+        <div class="col xs-col-12 md-col-6 p2 a-flicker">
+          <div class="inner">
+            <a href="{{ post.url | prepend: site.baseurl }}"><img class="vhs-fade vhs-delay-3" src="{{ post.image }}" alt="" /></a>
+          </div>
+        </div>
+      {% endfor %}
+
+      <div class="col col-12">
+        <p class="mt4 block center">
+          <!-- Några ytterligare sidor jag byggt och/eller designat: <br><a target="_blank" href="http://typeof.nu/">typeof.nu</a>, <a target="_blank" href="http://greendriveregion.com/sv/">greendriveregion.com</a>, <a target="_blank" href="http://www.varmlandlaser.se/">varmlandlaser.se</a>, <a target="_blank" href="http://varmtvalkommen.se/">varmtvalkommen.se</a>,<br><a target="_blank" href="http://karlstadsnatquiz.se/">karlstadsnatquiz.se</a>, <a target="_blank" href="http://www.golfandculture.se/">golfandculture.se</a> och <a target="_blank" href="http://www.lanaenkarlstadsbo.se/">lanaenkarlstadsbo.se</a>.  -->
+        </p>
+      </div>
+    </div>
+</div>

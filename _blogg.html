@@ -1,0 +1,19 @@
+---
+layout: page
+title: Blogg
+permalink: /blogg/
+weight: 4
+---
+
+<h1 class="page-heading mb3 mt4">Blogg —</h1>
+
+<ul class="list-reset">
+  {% for post in site.categories.blogg %}
+    <li>
+      <h2>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <small class="h4 gray">{{ post.date | date: "%b %-d, %Y" }}</small>
+      </h2>
+    </li>
+  {% endfor %}
+</ul>

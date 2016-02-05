@@ -1,0 +1,25 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Alexander Hansson — webbutvecklare/designer
+description: Jag heter Alexander Hansson och är en frilansade webbutvecklare och designer och har en kandidatexamen i informatik från Karlstads Universitet. Jag har bland annat varit med och byggt sajter för ISOC-SE, IF Boltic, Region Värmland, Brämhults, Skanska & MSC.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://hnssn.se" # the base hostname & protocol for your site
+keywords: webbutveckling, webbdesign, design, utveckling, falkenberg, karlstad, alexander, hansson, alexander hansson
+
+address: Storgatan 41, 311 31 Falkenberg
+address-google: https://www.google.com/maps/place/Storgatan+41,+311+31+Falkenberg,+Sweden/
+email: alexander@hnssn.se
+phone: +46 730 66 92 60
+
+
+# Build settings
+permalink: "/portfolio/:title/"
+markdown: kramdown
+sass:
+    style: compressed
