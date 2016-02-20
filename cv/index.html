@@ -28,6 +28,16 @@
 			top: 100px;
 			width: 320px;
 		}
+		.back {
+			position: fixed;
+			top: 20px;
+		}
+
+		@media (max-width: 900px) {
+			.back {
+				position: relative;
+			}
+		}
 	</style>
 
 	<!--[if lt IE 9]>
@@ -41,8 +51,10 @@
 
 </head>
 	<body class="sticky-footer">
+		<a class="plm back" href="/">← till startsidan</a>
 
 		<div class="container" role="main">
+
 			<div class="row mtl">
 					<div class="col-md-12 col-sm-6">
 						<div class="col-md-3 col-sm-5 col-xs-6">
