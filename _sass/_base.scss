@@ -387,6 +387,18 @@ p.roll {
 }
 
 .status {
+
+  &.available {
+      &:before {
+      background: #9BB899;
+    }
+  }
+  &.not-available {
+      &:before {
+      background: #FF7676;
+    }
+  }
+
   &:before {
     content: '';
     position: absolute;
@@ -394,7 +406,6 @@ p.roll {
     top: 72px;
     width: 10px;
     height: 10px;
-    background: #9BB899;
     border-radius: 100%;
 
     @media (max-width: 900px) {
