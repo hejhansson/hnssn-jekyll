@@ -402,3 +402,14 @@ p.roll {
     }
   }
 }
+
+.post_navigation {
+  @media (max-width: 900px) {
+    h2 {
+      font-size: 16px;
+    }
+    small {
+      font-size: 14px;
+    }
+  }
+}
