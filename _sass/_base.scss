@@ -53,6 +53,10 @@ body {
   }
 }
 
+.gray {
+  color: #717171;
+}
+
 
 a {
   color: #171717;
@@ -77,15 +81,59 @@ p, ul {
   }
 }
 
+
+/* så att vi inte stylar vanliga sidebaren med */
+.container {
+
+    ::-webkit-scrollbar {
+        -webkit-appearance: none;
+        height: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+        border-radius: 0px;
+        background-color: lighten(#717171, 20%);
+    }
+    ::-webkit-scrollbar-track {
+        background-color: lighten(#717171, 40%);
+    }
+}
+
+#portfolio {
+
+    @media (max-width: 1270px){
+      overflow-x: scroll;
+      white-space: nowrap;
+
+      overflow-y: hidden;
+      padding-bottom: 20px;
+
+      width:100%;
+      -webkit-overflow-scrolling: touch;
+
+      .col {
+        width: 300px;
+        display: inline-block;
+        height: 100px;
+        float: none;
+      }
+    }
+}
+
 .portfolio {
   width: 125%;
   margin-left: -12.5%;
+
+   @media (max-width: 1270px){
+     width: auto;
+     white-space:nowrap;
+   }
 
   .col {
     .inner {
       background: white;
       height: 373px;
       width: 608px;
+
       @media (max-width: 1283px){
         background: transparent;
         width: auto;
@@ -105,6 +153,10 @@ p, ul {
     }
   }
 
+  p.roll {
+    font-size: 16px;
+  }
+
   @media (max-width: 1283px){
     width: 100%;
     margin-left: 0;
@@ -112,6 +164,10 @@ p, ul {
     .col {
       padding: 0;
       margin-bottom: 20px;
+
+      p.roll {
+        font-size: 16px;
+      }
     }
   }
 }
@@ -232,6 +288,10 @@ footer {
     font-size: calc(12px + 2vw);
     line-height: 1.4em;
 
+    @media (max-width: 900px){
+      margin-top: -40px;
+    }
+
     @media (min-width: 52em) {
       font-size: calc(22px + 2vw);
       line-height: 1.4em;
@@ -336,5 +396,9 @@ p.roll {
     height: 10px;
     background: #9BB899;
     border-radius: 100%;
+
+    @media (max-width: 900px) {
+      display: none;
+    }
   }
 }

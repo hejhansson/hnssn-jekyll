@@ -64,7 +64,16 @@ layout: default
   {% endif %}
 
 
-  <a href="/#portfolio">← Tillbaka</a>
+  <!-- <a href="/#portfolio">← Tillbaka</a> -->
+
+  <div class="PageNavigation">
+  {% if page.previous.url %}
+    <h2 class="right inline-block"><a class="prev" href="{{page.previous.url}}">{{page.previous.title}} →<small class="block h4 gray right-align">nästa projekt</small></a></h2>
+  {% endif %}
+  {% if page.next.url %}
+    <h2 class="inline-block"><a class="next" href="{{page.next.url}}">← {{page.next.title}}<small class="block h4 gray">föregående projekt</small></a></h2>
+  {% endif %}
+</div>
 </article>
 
 </div>
