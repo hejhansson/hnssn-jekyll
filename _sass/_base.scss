@@ -40,6 +40,10 @@ body {
     padding-bottom: 10px;
   }
 
+  h1,h2,h3,h4 {
+    color: #3d3d3d;
+  }
+
   * {
     font-weight: 400;
   }
@@ -59,7 +63,7 @@ body {
 
 
 a {
-  color: #171717;
+  color: #3d3d3d;
 }
 
 p, ul {
@@ -196,7 +200,7 @@ header, footer  {
   }
   header  {
     a {
-      color: #E3EBF0;
+      color: #717171;
       &:hover {
         color: #E3EBF0;
       }
@@ -267,14 +271,14 @@ footer {
 }
 
 .intro-container {
-  background: #99AAB1;
+  background: #3d3d3d;
 }
 
 .triangle {
   position: absolute;
   bottom: 60px;
   display: inline-block;
-  border-right: 3px solid; border-bottom: 3px solid; border-color: #E3EBF0;
+  border-right: 3px solid; border-bottom: 3px solid; border-color: #717171;
   width: 15px; height: 15px;
   transform: rotate(45deg);
   left:0;
@@ -287,6 +291,7 @@ footer {
   height: 100vh;
 
   color: #2C3233;
+
 
   .h3 {
     @media (max-width: 900px){
@@ -377,6 +382,7 @@ h2.roll {
   @media (max-width: 900px){
     font-size: 18px;
   }
+  margin-bottom: 8px;
 }
 p.roll {
   margin-top: -10px;
