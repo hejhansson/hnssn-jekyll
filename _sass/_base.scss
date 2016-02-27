@@ -47,6 +47,19 @@ body {
   * {
     font-weight: 400;
   }
+
+  a {
+    color: #3d3d3d;
+  }
+
+  p, ul {
+    color: #717171;
+    font-size: 19px;
+
+    @media (max-width: 900px){
+      font-size: 16px;
+    }
+  }
 }
 
 #about {
@@ -54,25 +67,24 @@ body {
     br {
       display: none;
     }
+    &.mt4 {
+      margin-top: 3rem;
+    }
+    h1.mt4 {
+      margin-top: 0;
+    }
   }
 }
 
+#portfolio {
+  @media (max-width: 900px){
+    &.mt4 {
+      margin-top: 0;
+    }
+  }
+}
 .gray {
   color: #717171;
-}
-
-
-a {
-  color: #3d3d3d;
-}
-
-p, ul {
-  color: #717171;
-  font-size: 19px;
-
-  @media (max-width: 900px){
-    font-size: 16px;
-  }
 }
 
 .highlight {
@@ -103,7 +115,6 @@ p, ul {
 }
 
 #portfolio {
-
     @media (max-width: 1270px){
       overflow-x: scroll;
       white-space: nowrap;
@@ -123,7 +134,7 @@ p, ul {
     }
 }
 
-.portfolio {
+.portfolio-items {
   width: 125%;
   margin-left: -12.5%;
 
@@ -133,6 +144,7 @@ p, ul {
    }
 
   .col {
+
     .inner {
       background: white;
       height: 373px;
@@ -144,11 +156,13 @@ p, ul {
         height: auto;
       }
     }
+
     img {
       transition: .2s;
       -webkit-filter: grayscale(70%) opacity(1);
       filter: grayscale(70%) opacity(1);
     }
+
     &:hover {
       img {
         -webkit-filter: grayscale(0%) opacity(0.7);
@@ -176,21 +190,6 @@ p, ul {
   }
 }
 
-header {
-  @media (max-width: 900px) {
-    padding: 0 !important; /* mhm jag vet */
-  }
-}
-
-header, footer  {
-  a {
-    color: #2C3233;
-    &:hover {
-      color: #2C3233;
-    }
-  }
-}
-
 .front-page {
   .page-heading {
     color: #99AAB1;
@@ -204,6 +203,21 @@ header, footer  {
       &:hover {
         color: #E3EBF0;
       }
+    }
+  }
+}
+
+header {
+  @media (max-width: 900px) {
+    padding: 0 !important; /* mhm jag vet */
+  }
+}
+
+header, footer  {
+  a {
+    color: #2C3233;
+    &:hover {
+      color: #2C3233;
     }
   }
 }
@@ -225,7 +239,26 @@ footer {
       }
     }
   }
+}
 
+#article, .roller {
+  @media (max-width: 900px){
+    &.mt4 {
+      margin-top: 0;
+    }
+    .col-4 {
+      width: 50%;
+
+      h3 {
+        font-size: 14px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+    }
+    .year {
+      display: none;
+    }
+  }
 }
 
 .post {
@@ -270,10 +303,6 @@ footer {
   }
 }
 
-.intro-container {
-  background: #3d3d3d;
-}
-
 .triangle {
   position: absolute;
   bottom: 60px;
@@ -287,11 +316,13 @@ footer {
   margin-right:auto;
 }
 
+.intro-container {
+  background: #3d3d3d;
+}
+
 .intro {
   height: 100vh;
-
   color: #2C3233;
-
 
   .h3 {
     @media (max-width: 900px){

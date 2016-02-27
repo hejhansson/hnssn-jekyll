@@ -21,8 +21,9 @@ layout: default
   <div id="about" class="col col-12 mt4">
 
     <div class="mb4 sm-col-8 px2 mx-auto">
-      <p class="mt4">
-        Jag är en frilansande designer/webbutvecklare med erfarenhet från att utveckla siter för bland annat Region Värmland, Brämhults, Folktandvården Värmland & MSC.
+      <h1 class="mt4">Om mig</h1>
+      <p class="">
+        Jag heter Alexander Hansson och är en frilansande designer/webbutvecklare med erfarenhet från att utveckla siter för bland annat Region Värmland, Brämhults, Folktandvården Värmland & MSC.
         Min utgångspunkt är Falkenberg, där jag både jobbar i fysiska såväl som virtuella team.
       </p>
 
@@ -52,7 +53,7 @@ layout: default
 <div class="container clearfix">
   <div id="portfolio" class="col col-12 mt4">
 
-    <div class="portfolio mt3">
+    <div class="portfolio-items mt3">
       {% for post in site.categories.projekt %}
         <div class="col md-col-12 lg-col-6 p2">
           <div class="inner">
@@ -75,7 +76,7 @@ layout: default
           {% if site.available == "false" %}
            <span class="status not-available">Jag är inte tillgänglig för projekt.<br>Vill du kontakta mig så rekommenderar jag<br> att du skickar ett mail eller slår en pling.</span>
           {% else %}
-           <span class="status available">Jag är tillgänglig för projekt.</span><br>Vill du kontakta mig angående det eller liknande så rekommenderar jag att du skickar ett mail eller slår en pling.
+           <span class="status available">Jag är tillgänglig för projekt med start tidigast april 2016.</span><br>Vill du kontakta mig angående det eller liknande så rekommenderar jag att du skickar ett mail eller slår en pling.
           {% endif %}
         </span>
 

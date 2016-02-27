@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class="col col-12 mt4 clearfix">
+<div id="article" class="col col-12 mt4 clearfix">
 <article class="container clearfix py4 px2 post" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="col
   {% if page.categories contains 'blogg' %}
@@ -22,7 +22,7 @@ layout: default
 
   </div>
 
-  <div class="right mt4 py1 col-12 md-col-5">
+  <div class="roller right mt4 py1 col-12 md-col-5">
     {% if page.categories contains 'blogg' %}
       {% else %}
       <div class="col col-4">
@@ -32,18 +32,18 @@ layout: default
         </p>
       </div>
 
-      <div class="col col-4">
-        <h3>År</h3>
-        <p>
-          {{page.year}}
-        </p>
-      </div>
-
       {% if page.tools %}
       <div class="col col-4">
         <h3>Verktyg</h3>
         <p>
           {{page.tools}}
+        </p>
+      </div>
+
+      <div class="col year col-4">
+        <h3>År</h3>
+        <p>
+          {{page.year}}
         </p>
       </div>
       {% endif %}
