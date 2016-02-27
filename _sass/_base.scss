@@ -314,6 +314,9 @@ footer {
   right:0;
   margin-left:auto;
   margin-right:auto;
+  @media (max-width: 640px) {
+    bottom: 20px;
+  }
 }
 
 .intro-container {
