@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Värmland läser"
-date:   2016-01-07 12:39:56 +0100
+date:   2015-09-07 12:39:56 +0100
 categories: projekt featured
 
 klient: region värmland

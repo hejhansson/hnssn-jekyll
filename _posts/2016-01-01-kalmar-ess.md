@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Kalmar ESS"
-date:   2016-01-06 12:39:56 +0100
+date:   2016-01-08 12:39:56 +0100
 categories: projekt
 
 klient: MSC
