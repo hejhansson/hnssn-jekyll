@@ -6,12 +6,16 @@ layout: default
 
     <div class="container">
       <div class="intro flex flex-center">
-        <h1 class="white vhs-fade vhs-delay-3">
-          Webbutveckling & design med<br>fokus på användare och prestanda.
-          <p><br></p>
+        <h1 class="black vhs-fade vhs-delay-3">
+          <!-- Webbutveckling & design med<br>fokus på användare och prestanda. -->
+          <p class="black h2 center">
+            <small class="caps  block h4">webbutveckling & design</small>
+            Jag heter <span class="hite">Alexander Hansson</span> och är en frilansande <span class="hite">designer/webbutvecklare</span> med erfarenhet från att utveckla siter för bland annat Region Värmland, Brämhults, Folktandvården Värmland & MSC.
+            Min utgångspunkt är <span class="hite">Falkenberg</span>, där jag både jobbar i fysiska såväl som virtuella team.
+          </p>
         </h1>
 
-        <a href="#about" class="triangle vhs-fade vhs-delay-5"></a>
+        <a href="#about" class="arrow anchor vhs-fade vhs-delay-5">↓</a>
       </div>
     </div>
 
@@ -21,29 +25,24 @@ layout: default
   <div id="about" class="col col-12 mt4">
 
     <div class="mb4 sm-col-8 px2 mx-auto">
-      <h1 class="mt4">Om mig</h1>
-      <p class="">
-        Jag heter Alexander Hansson och är en frilansande designer/webbutvecklare med erfarenhet från att utveckla siter för bland annat Region Värmland, Brämhults, Folktandvården Värmland & MSC.
-        Min utgångspunkt är Falkenberg, där jag både jobbar i fysiska såväl som virtuella team.
-      </p>
 
-      <p>
+      <p class="mt4">
         Jag tar fram moderna webblösningar till små till mellanstora företag och utvecklar
-        allt från enklare hemsidor till e-handel, bokningssystem och skräddarsydda webbplattformar.
-        Min kompetens sträcker sig från början till slut: från skisser, strategi, interaktions- och UX-design till utveckling av produkten.
-        Mer om mina kompetenser och erfarenheter går att läsa i <br>mitt <a href="/cv">cv →</a>
+        allt från enklare hemsidor till e-handel, bokningssystem och skräddarsydda webbplattformar med fokus på användare och prestanda.
+        <br>Min kompetens sträcker sig från början till slut: från skisser, strategi, interaktions- och UX-design till utveckling av produkten.
+        Mer om mina kompetenser och erfarenheter går att läsa i mitt <a href="/cv">cv →</a>
       </p>
 
       <p>
         Min metod tar sin utgångspunkt i varje enskilt projekt för att säkerställa effektivitet och funktionalitet.
-        Vanligast är att jag jobbar i WordPress eller Meteor.js.
+        Vanligast är att jag jobbar i WordPress eller Meteor.js. Jag brinner för webb som är snabb och tillgänglig för alla.
       </p>
 
-      <p>
+      <!-- <p>
         Nedan finns ett urval av projekt.
         Förutom dessa har jag utvecklat siter för bland annat
         IF Boltic, Karlstad el- och stadsnät, Skanska och Uddeholm.
-      </p>
+      </p> -->
 
     </div>
   </div>
@@ -68,31 +67,44 @@ layout: default
 </div>
 
 
-<div class="container clearfix mb4 information">
-    <div class="sm-col-8 px2 relative">
-      <p class="mt4 block py4">
+<div class="container py4 clearfix mb4 information">
+    <div class="col sm-col-8 mt4 px2 relative">
+      <h2 id="contact" class="mt4">Låt oss göra <br>något roligt tillsammans</h2>
+      <p class="col-12 sm-col-8 hide">Som nämnt ovan—jag jobbar gärna med WordPress och Meteor.js och tycker om att vara med i hela processen från design till utveckling. <br>Jag kan assistera med följande: </p>
 
-        <span class="col col-10 mb2">
+
+      <p class="mt1 col-12 sm-col-12 block">
+
+        <span class="col col-12 sm-col-10 mb2">
           {% if site.available == "false" %}
-           <span class="status not-available">Jag är inte tillgänglig för projekt.<br>Vill du kontakta mig så rekommenderar jag<br> att du skickar ett mail eller slår en pling.</span>
+           <span class="status footer not-available">Jag är inte tillgänglig för projekt.<br>Vill du kontakta mig så rekommenderar jag<br> att du skickar ett mail eller slår en pling.</span>
           {% else %}
-           <span class="status available">Jag är tillgänglig för projekt med start tidigast april 2016.</span><br>Vill du kontakta mig angående det eller liknande så rekommenderar jag att du skickar ett mail eller slår en pling.
+           <span class="status footer available">Jag är tillgänglig för projekt med start tidigast april 2016.</span><br>Vill du kontakta mig angående det eller liknande så rekommenderar jag att du skickar ett mail eller slår en pling.
           {% endif %}
         </span>
 
 
-        <span class="col md-col-4 col-12 ">
-          <span class="black">E:</span> alexander@hnssn.se
-        </span>
-        <span class="col md-col-6 col-12 ">
-          <span class="black">T:</span> +46 730 66 92 60
-        </span>
-        <span class="col md-col-4 col-12 ">
-          <span class="black">GitHub:</span> <a href="http://github.com/hejhansson">hejhansson</a>
-        </span>
-        <span class="col md-col-6 col-12 ">
-          <span class="black">Twitter:</span> <a href="http://twitter.com/hejhansson">@hejhansson</a>
+        <span class="col col-12">
+          <span class="col md-col-4 col-12">
+            <span class="black">E:</span> alexander@hnssn.se
+          </span>
+          <span class="col md-col-6 col-12 ">
+            <span class="black">T:</span> +46 730 66 92 60
+          </span>
+          <span class="col col-12 mb2">
+              <span class="black">A:</span> storgatan 41, 311 31, falkenberg
+          </span>
+          <span class="col md-col-4 col-12 ">
+            <span class="black">GitHub:</span> <a href="http://github.com/hejhansson">hejhansson</a>
+          </span>
+          <span class="col md-col-6 col-12 ">
+            <span class="black">Twitter:</span> <a href="http://twitter.com/hejhansson">@hejhansson</a>
+          </span>
         </span>
       </p>
+
+    </div>
+    <div class="col col-4 mt4 py4 sm-show">
+      <img src="/images/profil.jpg" alt="" />
     </div>
 </div>

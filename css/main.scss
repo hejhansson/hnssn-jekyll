@@ -4,6 +4,26 @@
 @charset "utf-8";
 
 
+@font-face {
+    font-family: 'A';
+    font-weight: normal;
+    src: url('../fonts/a_regular.eot');
+    src: url('../fonts/a_regular.eot') format('embedded-opentype'),
+         url('../fonts/a_regular.woff') format('woff'),
+         url('../fonts/a_regular.ttf') format('truetype'),
+         url('../fonts/a_regular.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'A';
+    font-weight: bold;
+    src: url('../fonts/a_bold.eot');
+    src: url('../fonts/a_bold.eot') format('embedded-opentype'),
+         url('../fonts/a_bold.woff') format('woff'),
+         url('../fonts/a_bold.ttf') format('truetype'),
+         url('../fonts/a_bold.svg') format('svg');
+}
+
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import

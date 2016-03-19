@@ -3,6 +3,7 @@ layout: default
 ---
 <div id="article" class="col col-12 mt4 clearfix">
 <article class="container clearfix py4 px2 post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="post__item col-12 col relative">
   <div class="col
   {% if page.categories contains 'blogg' %}
     md-col-10
@@ -10,7 +11,7 @@ layout: default
     md-col-6
   {% endif %}">
     <header>
-      <h1 class="" itemprop="name headline">{{ page.title }}</h1>
+      <h1 class="h1 mt4" itemprop="name headline">{{ page.title }} {% if page.klient %}<small>för <span>{{ page.klient }}</span></small>{% endif %}</h1>
       {% if page.categories contains 'blogg' %}
         <p class="gray"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
       {% endif %}
@@ -49,7 +50,7 @@ layout: default
       {% endif %}
     {% endif %}
   </div>
-
+  </div>
   {% if page.image %}
     <img src="{{page.image}}" alt="{{page.title}}">
   {% endif %}

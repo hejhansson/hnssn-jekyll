@@ -4,7 +4,7 @@ title:  "Varmt välkommen"
 date:   2015-04-07 12:39:56 +0100
 categories: projekt featured
 
-klient: region värmland
+klient: karlstad kommun
 image: /images/varmt-valkommen.jpg
 link: http://varmtvalkommen.se/
 roll: Front-end,<br> Back-end

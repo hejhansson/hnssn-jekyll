@@ -9,9 +9,9 @@ weight: 7
     <h1 class="page-heading portfolio__heading mb0 mt4">Portfolio —</h1>
     <p class="mb4">Ett urval av projekt.</p>
     <br><br><br>
-    <div class="portfolio">
+    <div class="portfolio mxn2">
       {% for post in site.categories.projekt %}
-        <div class="col xs-col-12 md-col-6 p2 a-flicker">
+        <div class="col xs-col-12 md-col-12 p2 a-flicker">
           <div class="inner">
             <a href="{{ post.url | prepend: site.baseurl }}"><img class="vhs-fade vhs-delay-3" src="{{ post.image }}" alt="" /></a>
           </div>

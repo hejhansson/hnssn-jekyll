@@ -7,7 +7,7 @@ categories: projekt
 klient: Region Värmland
 image: /images/region.jpg
 link: http://regionvarmland.se
-roll: Front- och back-end
+roll: Front-end,<br> Back-end
 year: 2014/2015
 tools: SCSS<br>Gulp<br>WordPress
 ---

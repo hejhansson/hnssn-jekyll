@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Brämhults"
+title:  "Prata med oss om eko"
 date:   2016-01-05 12:39:56 +0100
 categories: projekt featured
 
-klient: Brämhults
+klient: Brämhults JUICE
 image: /images/bramhults.jpg
 image2: /images/bramhults-trad.jpg
 link: http://tyckom.bramhults.se
