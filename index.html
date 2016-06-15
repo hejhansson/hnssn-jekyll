@@ -2,109 +2,75 @@
 layout: default
 ---
 
-<div class="col col-12 intro-container px2">
+<div class="col-12 intro-container container clearfix px2">
 
-    <div class="container">
-      <div class="intro flex flex-center">
-        <h1 class="black vhs-fade vhs-delay-3">
-          <!-- Webbutveckling & design med<br>fokus på användare och prestanda. -->
-          <p class="black h2 center">
-            <small class="caps  block h4">webbutveckling & design</small>
-            Jag heter <span class="hite">Alexander Hansson</span> och är en frilansande <span class="hite">designer/webbutvecklare</span> med erfarenhet från att utveckla siter för bland annat Region Värmland, Brämhults, Folktandvården Värmland & MSC.
-            Min utgångspunkt är <span class="hite">Falkenberg</span>, där jag både jobbar i fysiska såväl som virtuella team.
-          </p>
-        </h1>
+    <div class="container clearfix mt2">
+      <div class="intro mt4 py4">
+        <p class="black h2 vhs-fade vhs-delay-4 py4 mt4">
+          Jag heter Alexander Hansson och är en frilansande designer <span class="sm-hide"><br></span>och webbutvecklare.
+          Min utgångspunkt är Falkenberg, där jag<span class="sm-hide"><br></span> både jobbar i fysiska såväl som virtuella team.
+        </p>
 
-        <a href="#about" class="arrow anchor vhs-fade vhs-delay-5">↓</a>
+        <!-- <a href="#about" class="arrow anchor vhs-fade vhs-delay-5">↓</a> -->
       </div>
     </div>
 
 </div>
 
-<div class="container clearfix">
-  <div id="about" class="col col-12 mt4">
 
-    <div class="mb4 sm-col-8 px2 mx-auto">
+<div class="container clearfix mt4 vhs-fade vhs-delay-5">
+  <div id="portfolio" class="col col-12 mt3 relative">
 
-      <p class="mt4">
-        Jag tar fram moderna webblösningar till små till mellanstora företag och utvecklar
-        allt från enklare hemsidor till e-handel, bokningssystem och skräddarsydda webbplattformar med fokus på användare och prestanda.
-        <br>Min kompetens sträcker sig från början till slut: från skisser, strategi, interaktions- och UX-design till utveckling av produkten.
-        Mer om mina kompetenser och erfarenheter går att läsa i mitt <a href="/cv">cv →</a>
-      </p>
-
-      <p>
-        Min metod tar sin utgångspunkt i varje enskilt projekt för att säkerställa effektivitet och funktionalitet.
-        Vanligast är att jag jobbar i WordPress eller Meteor.js. Jag brinner för webb som är snabb och tillgänglig för alla.
-      </p>
-
-      <!-- <p>
-        Nedan finns ett urval av projekt.
-        Förutom dessa har jag utvecklat siter för bland annat
-        IF Boltic, Karlstad el- och stadsnät, Skanska och Uddeholm.
-      </p> -->
-
-    </div>
-  </div>
-</div>
+    <div class="portfolio-items">
+      <div class="text">
 
 
-<div class="container clearfix">
-  <div id="portfolio" class="col col-12 mt4">
+        <span class="char1">p</span>
+        <span class="char2">r</span>
+        <span class="char3">o</span>
+        <span class="char4">j</span>
+        <span class="char5">e</span>
+        <span class="char6">k</span>
+        <span class="char7">t</span>
+        <span class="char8"></span>
+        <span class="char9">u</span>
+        <span class="char10">t</span>
+        <span class="char11">v</span>
+        <span class="char12">a</span>
+        <span class="char13">l</span>
+        <span class="char14">d</span>
+        <span class="char15">a</span>
+        <span class="char16"></span>
+      </div>
 
-    <div class="portfolio-items mt3">
       {% for post in site.categories.projekt %}
-        <div class="col md-col-12 lg-col-6 p2">
-          <div class="inner">
-            <a href="{{ post.url | prepend: site.baseurl }}"><img class="vhs-fade vhs-delay-3" src="{{ post.image }}" alt="" /></a>
+        <div class="col col-12 md-col-12 lg-col-12">
+          <a class="inner-container fade col-12 p2" href="{{ post.url | prepend: site.baseurl }}">
+
+          <div class="inner new">
+
+
+              <div class="col col-12">
+
+                <h2 class="roll h3 col col-12 sm-col-3">
+
+                  {{post.title}}{% if post.klient %}<small class="block">för <span>{{ post.klient }}</span></small>{% endif %}
+                  <p class="roll block">{{post.roll}}</p>
+                </h2>
+
+
+                <p class="col col-12 sm-col-9">
+                  {{post.content | strip_html | truncate: 200}}
+
+                </p>
+
+              </div>
+
           </div>
-          <h2 class="roll">{{post.title}}</h2>
-          <p class="roll">{{post.roll}}</p>
+        </a>
+
         </div>
       {% endfor %}
     </div>
   </div>
-</div>
-
-
-<div class="container py4 clearfix mb4 information">
-    <div class="col sm-col-8 mt4 px2 relative">
-      <h2 id="contact" class="mt4">Låt oss göra <br>något roligt tillsammans</h2>
-      <p class="col-12 sm-col-8 hide">Som nämnt ovan—jag jobbar gärna med WordPress och Meteor.js och tycker om att vara med i hela processen från design till utveckling. <br>Jag kan assistera med följande: </p>
-
-
-      <p class="mt1 col-12 sm-col-12 block">
-
-        <span class="col col-12 sm-col-10 mb2">
-          {% if site.available == "false" %}
-           <span class="status footer not-available">Jag är inte tillgänglig för projekt.<br>Vill du kontakta mig så rekommenderar jag<br> att du skickar ett mail eller slår en pling.</span>
-          {% else %}
-           <span class="status footer available">Jag är tillgänglig för projekt med start tidigast april 2016.</span><br>Vill du kontakta mig angående det eller liknande så rekommenderar jag att du skickar ett mail eller slår en pling.
-          {% endif %}
-        </span>
-
-
-        <span class="col col-12">
-          <span class="col md-col-4 col-12">
-            <span class="black">E:</span> alexander@hnssn.se
-          </span>
-          <span class="col md-col-6 col-12 ">
-            <span class="black">T:</span> +46 730 66 92 60
-          </span>
-          <span class="col col-12 mb2">
-              <span class="black">A:</span> storgatan 41, 311 31, falkenberg
-          </span>
-          <span class="col md-col-4 col-12 ">
-            <span class="black">GitHub:</span> <a href="http://github.com/hejhansson">hejhansson</a>
-          </span>
-          <span class="col md-col-6 col-12 ">
-            <span class="black">Twitter:</span> <a href="http://twitter.com/hejhansson">@hejhansson</a>
-          </span>
-        </span>
-      </p>
-
-    </div>
-    <div class="col col-4 mt4 py4 sm-show">
-      <img src="/images/profil.jpg" alt="" />
-    </div>
 </div>

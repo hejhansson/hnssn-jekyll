@@ -1,34 +1,21 @@
-<header class="absolute col-12 {% if page.url == '/' %}vhs-fade vhs-delay-5{% endif %}">
+<header class="absolute col-12">
 
-  <div class="px2">
-    <div class="container clearfix mt3">
+  <div class="px4">
+    <div class="clearfix mt2 vhs-fade">
 
-      <a class="col col-12 sm-col-3 py2 logo" href="{{ site.baseurl }}/">
-        <!-- <img src="/images/logo-test.png" alt=""> -->
+      <a class="fade col col-12 sm-col-3 py2 logo" href="/">
         Alexander Hansson
       </a>
-      {% if page.url == '/' %}
       <nav class="col sm-col-9">
-        <div class="hide">
-          {% if site.available == "false" %}
-            <a class="relative page-link right ml3 py2" href="/#contact"><span class="status not-available">Jag är inte tillgänglig för projekt.</span></a>
-          {% else %}
-            <a class="relative page-link right ml3 py2" href="/#contact"><span class="status available">jag är tillgänglig för projekt</span></a>
-          {% endif %}
-        </div>
         <ul class="list-reset py2 right-align">
-          <li class="inline-block ml3">
-            <a class="anchor" href="#about">Om</a>
+          <li class="inline-block ml4">
+            <a class="fade" href="/">Projekt</a>
           </li>
-          <li class="inline-block ml3">
-            <a class="anchor" href="#portfolio">Projekt</a>
-          </li>
-          <li class="inline-block ml3">
-            <a class="anchor" href="#contact">Kontakt</a>
+          <li class="inline-block ml4">
+            <a class="fade" href="/om">Om</a>
           </li>
         </ul>
       </nav>
-      {% endif %}
     </div>
   </div>
 

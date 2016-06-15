@@ -2,9 +2,9 @@
 layout: post
 title:  "Kalmar ESS"
 date:   2016-01-08 12:39:56 +0100
-categories: projekt
+categories: 
 
-klient: 
+klient:
 image: /images/kalmar.jpg
 link: http://introduktion.kalmaress.se
 roll: Design, <br>Front- och <br> back-end

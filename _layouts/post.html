@@ -1,14 +1,14 @@
 ---
 layout: default
 ---
-<div id="article" class="col col-12 mt4 clearfix">
-<article class="container clearfix py4 px2 post" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="post__item col-12 col relative">
-  <div class="col
+<div id="article" class="container mt4 clearfix vhs-fade vhs-delay-4">
+<article class="clearfix py4 px2 post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="post__item col-12 col  relative">
+  <div class="mx-auto
   {% if page.categories contains 'blogg' %}
     md-col-10
     {% else %}
-    md-col-6
+    md-col-8
   {% endif %}">
     <header>
       <h1 class="h1 mt4" itemprop="name headline">{{ page.title }} {% if page.klient %}<small>för <span>{{ page.klient }}</span></small>{% endif %}</h1>
@@ -21,12 +21,16 @@ layout: default
       {{ content }}
     </div>
 
+    <div class="col col-12">
+      <a class="" target="_blank" href="{{page.link}}">{{page.link}}</a>
+    </div>
+
   </div>
 
-  <div class="roller right mt4 py1 col-12 md-col-5">
+  <div class="roller mt2 py1 col-12 md-col-7 center mx-auto hide">
     {% if page.categories contains 'blogg' %}
       {% else %}
-      <div class="col col-4">
+      <div class="col col-6 mb3">
         <h3>Roll</h3>
         <p>
           {{page.roll}}
@@ -34,21 +38,22 @@ layout: default
       </div>
 
       {% if page.tools %}
-      <div class="col col-4">
+      <div class="col col-6 mb3">
         <h3>Verktyg</h3>
         <p>
           {{page.tools}}
         </p>
       </div>
 
-      <div class="col year col-4">
+      <!-- <div class="col year col-4 mb3">
         <h3>År</h3>
         <p>
           {{page.year}}
         </p>
-      </div>
+      </div> -->
       {% endif %}
     {% endif %}
+
   </div>
   </div>
   {% if page.image %}
@@ -66,10 +71,10 @@ layout: default
 
   <div class="post_navigation">
   {% if page.previous.url %}
-    <h2 class="right inline-block"><a class="prev" href="{{page.previous.url}}">{{page.previous.title}} →<small class="block h4 gray right-align">nästa projekt</small></a></h2>
+    <h2 class="right inline-block"><a class="fade prev" href="{{page.previous.url}}">{{page.previous.title}}<small class="block h4 gray right-align">nästa projekt</small></a></h2>
   {% endif %}
   {% if page.next.url %}
-    <h2 class="inline-block"><a class="next" href="{{page.next.url}}">← {{page.next.title}}<small class="block h4 gray">föregående projekt</small></a></h2>
+    <h2 class="inline-block"><a class="fade next" href="{{page.next.url}}">{{page.next.title}}<small class="block h4 gray">föregående projekt</small></a></h2>
   {% endif %}
 </div>
 </article>

@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Px Grotesk Regular';
+  src: url('PxGrotesk-Regular.eot'); /* IE9 Compat Modes */
+  src: url('PxGrotesk-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('PxGrotesk-Regular.woff') format('woff'), /* Modern Browsers */
+       url('PxGrotesk-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('PxGrotesk-Regular.svg#fcffd2ec987e50f3ffe92b8233fa766c') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+

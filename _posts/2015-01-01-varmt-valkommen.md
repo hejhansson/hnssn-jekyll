@@ -9,9 +9,9 @@ image: /images/varmt-valkommen.jpg
 link: http://varmtvalkommen.se/
 roll: Front-end,<br> Back-end
 year: 2015
-tools: SCSS<br>Gulp<br>WordPress
+tools: WordPress<br>SCSS<br>Gulp
 ---
 
-Varmt välkommen var en kampanj av Karlstad kommun där syftet med siten var att göra det lättare för nya och gamla Karlstadsbor att träffas och lära känna varandra genom att kunna lägga upp en kontaktannons.
+Varmt välkommen var en kampanj av Karlstad kommun där syftet med siten var att göra det lättare för nya och gamla Karlstadsbor att träffas och lära känna varandra genom att kunna lägga upp en kontaktannons. Jag gjorde front- och back-end-utveckling i projektet.
 
 [varmtvalkommen.se →](http://varmtvalkommen.se/)
