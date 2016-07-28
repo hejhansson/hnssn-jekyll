@@ -2,26 +2,11 @@
 layout: default
 ---
 
-<div class="col-12 intro-container container clearfix px2">
 
-    <div class="container clearfix mt2">
-      <div class="intro mt4 py4">
-        <p class="black h2 vhs-fade vhs-delay-4 py4 mt4">
-          Jag heter Alexander Hansson och är en frilansande designer <span class="sm-hide"><br></span>och webbutvecklare.
-          Min utgångspunkt är Falkenberg, där jag<span class="sm-hide"><br></span> både jobbar i fysiska såväl som virtuella team.
-        </p>
+<div class="container clearfix mt0 sm-mt3 vhs-fade vhs-delay-5">
+  <div id="portfolio" class="col col-12 mt1 sm-mt3 relative">
 
-        <!-- <a href="#about" class="arrow anchor vhs-fade vhs-delay-5">↓</a> -->
-      </div>
-    </div>
-
-</div>
-
-
-<div class="container clearfix mt4 vhs-fade vhs-delay-5">
-  <div id="portfolio" class="col col-12 mt3 relative">
-
-    <div class="portfolio-items">
+    <div class="portfolio-items mt2">
       <div class="text">
 
 
@@ -42,24 +27,27 @@ layout: default
         <span class="char15">a</span>
         <span class="char16"></span>
       </div>
-
-      {% for post in site.categories.projekt %}
+      {% for post in site.categories.featured %}
         <div class="col col-12 md-col-12 lg-col-12">
-          <a class="inner-container fade col-12 p2" href="{{ post.url | prepend: site.baseurl }}">
+          <a class="inner-container {% if forloop.index == 1 %} no-border {% endif %}fade col-12 p2" href="{{ post.url | prepend: site.baseurl }}">
 
           <div class="inner new">
 
 
               <div class="col col-12">
+                <h2 class="roll h3 sm-show col col-12 sm-col-2" style="display:none;">
+                  {{post.year}}
+                </h2>
 
-                <h2 class="roll h3 col col-12 sm-col-3">
+		<h2 class="roll h3 col col-12 sm-col-10">
 
-                  {{post.title}}{% if post.klient %}<small class="block">för <span>{{ post.klient }}</span></small>{% endif %}
+                  {{post.title}}{% if post.klient %} <small class="">för <span>{{ post.klient }}</span></small>{% endif %}
                   <p class="roll block">{{post.roll}}</p>
+                  <small class="right">→</small>
                 </h2>
 
 
-                <p class="col col-12 sm-col-9">
+                <p class="col col-12 sm-col-9 hide">
                   {{post.content | strip_html | truncate: 200}}
 
                 </p>
@@ -71,6 +59,9 @@ layout: default
 
         </div>
       {% endfor %}
+      <div class="col col-12 center mt4 mb4">
+        <a class="fade h3" href="/projekt">Fler projekt →</a>
+      </div>
     </div>
   </div>
 </div>

@@ -2,7 +2,7 @@
 layout: post
 title:  "Skillnad under ytan"
 date:   2016-01-01 09:39:56 +0100
-categories: projekt featured
+categories: projekt
 
 klient: MSC
 image: /images/msc-image.jpg
@@ -13,5 +13,3 @@ tools: Grunt<br>SCSS
 ---
 
 MSC eller Marine Stewardship Council, är en global organisation som arbetar med miljöcertifiering av fiskerinäringen. "Skillnad under ytan" var en kampanjsajt i samarbete med Amir Kheirmand, som vann Sveriges mästerkock. Min roll i projektet var att göra front-end samt back-end för quiz.
-
-[skillnadunderytan.se →](http://skillnadunderytan.se)

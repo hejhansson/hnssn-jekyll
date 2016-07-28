@@ -1,27 +1,45 @@
 ---
 layout: page
-title: Portfolio
-permalink: /portfolio/
+title: Projekt
+permalink: /projekt/
 weight: 7
 ---
 
-<div>
-    <h1 class="page-heading portfolio__heading mb0 mt4">Portfolio —</h1>
-    <p class="mb4">Ett urval av projekt.</p>
-    <br><br><br>
-    <div class="portfolio mxn2">
+
+
+<div class="container clearfix mt0 sm-mt4 vhs-fade vhs-delay-5">
+  <div id="portfolio" class="col col-12 mt2 sm-mt4 relative page-portfolio">
+
+    <div class="portfolio-items">
+
       {% for post in site.categories.projekt %}
-        <div class="col xs-col-12 md-col-12 p2 a-flicker">
-          <div class="inner">
-            <a href="{{ post.url | prepend: site.baseurl }}"><img class="vhs-fade vhs-delay-3" src="{{ post.image }}" alt="" /></a>
+        <div class="col col-12 md-col-12 lg-col-12">
+          <a class="inner-container fade col-12 p2" href="{{ post.url | prepend: site.baseurl }}">
+
+          <div class="inner new">
+
+
+              <div class="col col-12">
+
+                <h2 class="roll h3 col col-12 sm-col-3">
+
+                  {{post.title}}{% if post.klient %}<small class="block">för <span>{{ post.klient }}</span></small>{% endif %}
+                  <p class="roll block">{{post.roll}}</p>
+                </h2>
+
+
+                <p class="col col-12 sm-col-9 project-content">
+                  {{post.content | strip_html | truncate: 200}}
+
+                </p>
+
+              </div>
+
           </div>
+        </a>
+
         </div>
       {% endfor %}
-
-      <div class="col col-12">
-        <p class="mt4 block center">
-          <!-- Några ytterligare sidor jag byggt och/eller designat: <br><a target="_blank" href="http://typeof.nu/">typeof.nu</a>, <a target="_blank" href="http://greendriveregion.com/sv/">greendriveregion.com</a>, <a target="_blank" href="http://www.varmlandlaser.se/">varmlandlaser.se</a>, <a target="_blank" href="http://varmtvalkommen.se/">varmtvalkommen.se</a>,<br><a target="_blank" href="http://karlstadsnatquiz.se/">karlstadsnatquiz.se</a>, <a target="_blank" href="http://www.golfandculture.se/">golfandculture.se</a> och <a target="_blank" href="http://www.lanaenkarlstadsbo.se/">lanaenkarlstadsbo.se</a>.  -->
-        </p>
-      </div>
     </div>
+  </div>
 </div>

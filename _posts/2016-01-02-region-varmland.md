@@ -13,5 +13,3 @@ tools: SCSS<br>Gulp<br>WordPress
 ---
 
 Region Värmland är en regional utvecklingsorganisation som skapar förutsättningar för en hållbar tillväxt i Värmland. Jag gjorde front- och back-end-utveckling i projektet.
-
-[regionvarmland.se →](http://regionvarmland.se)
